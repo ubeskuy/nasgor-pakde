@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasi Goreng Jangkung Gandul</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#profile">Profil</a>
+            <a href="#menu">Menu</a>
+            <a href="#location">Lokasi</a>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <img src="assets/img/profile.jpeg" alt="Restaurant Profile" class="profile-img">
+        <h1>Nasi Goreng Jangkung Gandul</h1>
+        <p>Menyajikan Menu Makanan Sejak 2010</p>
+        <p>Buka Mulai Jam 18:00 s/d 02:00</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Kami</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="assets/img/nasi_goreng_biasa.jpeg" alt="Nasi Goreng Biasa">
+                <h3>Nasi Goreng Biasa</h3>
+                <p>Rp 15.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Biasa', 15000, -1)">-</button>
+                    <span id="qty-Nasi Goreng Biasa">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Biasa', 15000, 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="assets/img/nasi_goreng_seafood.jpeg" alt="Nasi Goreng Seafood">
+                <h3>Nasi Goreng Seafood</h3>
+                <p>Rp 23.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Seafood', 23000, -1)">-</button>
+                    <span id="qty-Nasi Goreng Seafood">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Seafood', 23000, 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="assets/img/nasi_goreng_special.jpeg" alt="Nasi Goreng Special">
+                <h3>Nasi Goreng Special</h3>
+                <p>Rp 25.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Special', 25000, -1)">-</button>
+                    <span id="qty-Nasi Goreng Special">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Special', 25000, 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="assets/img/nasi_goreng_kambing.jpeg" alt="Nasi Goreng Kambing">
+                <h3>Nasi Goreng Kambing</h3>
+                <p>Rp 27.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Kambing', 27000, -1)">-</button>
+                    <span id="qty-Nasi Goreng Kambing">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Kambing', 27000, 1)">+</button>
+                </div>
+            </div>
+<div class="menu-item">
+                <img src="assets/img/nasi_goreng_mawut.jpeg" alt="Nasi Goreng Mawut">
+                <h3>Nasi Goreng Mawut</h3>
+                <p>Rp 20.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Mawut', 20000, -1)">-</button>
+                    <span id="qty-Nasi Goreng Mawut">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Nasi Goreng Mawut', 20000, 1)">+</button>
+                </div>
+            </div>
+<div class="menu-item">
+                <img src="assets/img/mie_goreng.jpeg" alt="Mie Goreng">
+                <h3>Mie Goreng</h3>
+                <p>Rp 15.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Mie Goreng', 15000, -1)">-</button>
+                    <span id="qty-Mie Goreng">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Mie Goreng', 15000, 1)">+</button>
+                </div>
+            </div>
+<div class="menu-item">
+                <img src="assets/img/mie_rebus.jpeg" alt="Mie Rebus">
+                <h3>Mie Rebus</h3>
+                <p>Rp 15.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Mie Rebus', 15000, -1)">-</button>
+                    <span id="qty-Mie Rebus">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Mie Rebus', 15000, 1)">+</button>
+                </div>
+            </div>
+<div class="menu-item">
+                <img src="assets/img/kwetiaw_goreng.jpeg" alt="Kwetiaw Goreng">
+                <h3>Kwetiaw Goreng</h3>
+                <p>Rp 15.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Kwetiaw Goreng', 15000, -1)">-</button>
+                    <span id="qty-Kwetiaw Goreng">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Kwetiaw Goreng', 15000, 1)">+</button>
+                </div>
+            </div>
+<div class="menu-item">
+                <img src="assets/img/capcay.jpeg" alt="Capcay">
+                <h3>Capcay</h3>
+                <p>Rp 17.000</p>
+                <div class="quantity-control">
+                    <button class="quantity-btn" onclick="updateQuantity('Capcay', 17000, -1)">-</button>
+                    <span id="qty-Capcay">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity('Capcay', 17000, 1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="order-summary">
+            <div class="summary-container">
+                <h2>Pesanan Anda</h2>
+                <div id="orderSummary">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <p>Keranjang belanja masih kosong</p>
+                    </div>
+                </div>
+                <button class="whatsapp-btn" onclick="sendToWhatsApp()" id="whatsappButton" disabled>
+                    <i class="fab fa-whatsapp"></i>
+                    Pesan via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>Lokasi Kami</h2>
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.68885019381645!2d106.79614841938022!3d-6.327790946504209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef9a3cfc8ec7%3A0x99d23b17533ed794!2sPONDOK_LABU!5e0!3m2!1sen!2sus!4v1731744340919!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+     <script src="assets/js/script.js"></script>
+
+</body>
+</html>
